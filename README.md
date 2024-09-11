@@ -74,12 +74,6 @@ Before running this project, make sure you have the following installed:
 
    Replace the placeholders with your actual Firebase configuration values.
 
-5. Update `.gitignore` to exclude the Firebase configuration:
-   ```
-   # Firebase
-   src/firebase.js
-   ```
-
 ## Running the Project
 
 Before running this project, make sure you have the following installed:

@@ -121,6 +121,7 @@ input {
   color: var(--light);
   border: 2px solid var(--accent);
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 table {

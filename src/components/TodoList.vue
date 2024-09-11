@@ -32,7 +32,7 @@
                 @click="toggleComplete(todo.id, todo.completed)"
                 class="btn-toggle"
               >
-                Toggle
+                Done
               </button>
               <button
                 @click="deleteTodo(todo.id)"

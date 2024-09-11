@@ -1,0 +1,18 @@
+:root {
+  --primary: #222831;
+  --secondary: #393E46;
+  --accent: #00ADB5;
+  --light: #EEEEEE;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--primary);
+  color: var(--light);
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+}

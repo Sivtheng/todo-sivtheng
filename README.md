@@ -35,7 +35,23 @@ Before running this project, make sure you have the following installed:
    npm install
    ```
 
-3. Create a `src/firebase.js` file with your Firebase configuration:
+3. Set up the Firestore collection:
+   - Go to your Firebase Console (https://console.firebase.google.com/)
+   - Select your project
+   - In the left sidebar, click on "Firestore Database"
+   - Click "Create database" if you haven't already
+   - Choose "Start in production mode" or "Start in test mode" based on your needs
+   - Select a location for your database
+   - Once created, click "Start collection"
+   - Set the Collection ID to "todos"
+   - Add a document with the following fields:
+     - Field name: "text", Type: string
+     - Field name: "completed", Type: boolean, Value: false
+   - Click "Save" to create the document
+
+   This sets up the initial structure for your todos collection.
+
+4. Create a `src/firebase.js` file with your Firebase configuration:
    ```javascript
    import { initializeApp } from "firebase/app";
    import { getFirestore } from "firebase/firestore";
@@ -58,25 +74,23 @@ Before running this project, make sure you have the following installed:
 
    Replace the placeholders with your actual Firebase configuration values.
 
-4. Update `.gitignore` to exclude the Firebase configuration:
+5. Update `.gitignore` to exclude the Firebase configuration:
    ```
    # Firebase
    src/firebase.js
    ```
 
-## Prerequisites
+## Running the Project
 
 Before running this project, make sure you have the following installed:
 
 - Node.js (v14 or later)
 - npm (v6 or later)
 
-## Installation
-
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/sivtheng-todo-list.git
-   cd sivtheng-todo-list
+   git clone https://github.com/Sivtheng/todo-sivtheng.git
+   cd todo-sivtheng
    ```
 
 2. Install dependencies:

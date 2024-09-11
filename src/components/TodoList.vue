@@ -10,9 +10,9 @@
       <table>
         <thead>
           <tr>
-            <th>Task</th>
-            <th>Status</th>
-            <th>Actions</th>
+            <th>task</th>
+            <th>status</th>
+            <th>actions</th>
           </tr>
         </thead>
         <tbody>
@@ -24,7 +24,7 @@
             </td>
             <td>
               <span :class="todo.completed ? 'status-completed' : 'status-pending'">
-                {{ todo.completed ? 'Completed' : 'Pending' }}
+                {{ todo.completed ? 'completed' : 'pending' }}
               </span>
             </td>
             <td>
@@ -32,13 +32,13 @@
                 @click="toggleComplete(todo.id, todo.completed)"
                 class="btn-toggle"
               >
-                Done
+                done
               </button>
               <button
                 @click="deleteTodo(todo.id)"
                 class="btn-delete"
               >
-                Delete
+                delete
               </button>
             </td>
           </tr>

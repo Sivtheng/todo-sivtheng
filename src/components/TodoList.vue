@@ -5,7 +5,7 @@
       <input
         v-model="newTodo"
         @keyup.enter="addTodo"
-        placeholder="Add a new task"
+        placeholder="add a new task"
       />
       <table>
         <thead>
